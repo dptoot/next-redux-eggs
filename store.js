@@ -22,7 +22,6 @@ function nestedCombineReducers(map) {
         if (typeof recursiveMapValue === 'function') {
             const reducer = recursiveMapValue;
             flatReducersMapObject[recursiveMapKey] = reducer;
-            console.log("🚀 ~ file: nested-combine-reducers.js:28 ~ nestedCombineReducers ~ recursiveMapKey", recursiveMapKey)
         }
         // Nesting found, let's go deeper !
         if (typeof recursiveMapValue === 'object') {

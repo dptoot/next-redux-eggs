@@ -9,7 +9,7 @@ const CustomApp = ({ Component, pageProps }) => {
       <ol>
         <li>
           <Link href='/'>
-            with root reducer
+            with root level reducer
           </Link>
         </li>
         

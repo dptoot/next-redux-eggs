@@ -14,7 +14,7 @@ const withSiblingNested = wrapper.wrapPage((props) => {
 
 withSiblingNested.getInitialProps = wrapper.wrapGetInitialProps(store => () => {
   return {
-    title: 'with sibling nested reducer',
+    title: 'with nested reducer sibling',
     expectedState: {
       rootEgg: true,
       nested: {

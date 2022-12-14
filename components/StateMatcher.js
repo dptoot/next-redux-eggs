@@ -8,10 +8,12 @@ export default function StateMatcher({
 }) {
     const currentState = useSelector(state => state);
     const success = isEqual(currentState, expectedState);
-    
+    const specifier = success ? '' : 'DO NOT ';
     return (
         <div>
             <h1>{title}</h1>
+
+            <div>State Objects {specifier}match</div>
 
             <div className="state-displays">
                 <StateDisplay title="Current State" value={currentState} />
